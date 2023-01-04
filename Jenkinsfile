@@ -19,7 +19,7 @@ stage('Build') {
     withMaven(jdk: 'JAVA', maven: 'maven') {
         
         println "build is running"
-        sh 'mvn -f pom.xml clean package -Dmaven.test.skip=true'
+        sh 'mvn clean package'
     }
 }
 
