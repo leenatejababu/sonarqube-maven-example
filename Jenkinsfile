@@ -11,7 +11,7 @@ def TAG_NAME = params.TAG_NAME
 // def Dockerhub_URL = params.Dockerhub_URL
 
 stage('Checkout') {
-  git credentialsId:'Github-Login', url: 'https://github.com/leenatejababu/sonarqube-maven-example'  
+ git credentialsId: 'Github', url: 'https://github.com/leenatejababu/sonarqube-maven-example.git'
  }
 
 
